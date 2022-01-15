@@ -11,7 +11,7 @@ function BlogPost(props) {
   const {
     _rawBody,
     authors,
-    categories,
+    // categories,
     title,
     mainImage,
     publishedAt,
@@ -46,7 +46,7 @@ function BlogPost(props) {
               </div>
             )}
             {authors && <AuthorList items={authors} title="Authors" />}
-            {categories && (
+            {/* {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>
                 <ul>
@@ -55,7 +55,7 @@ function BlogPost(props) {
                   ))}
                 </ul>
               </div>
-            )}
+            )} */}
           </aside>
         </div>
       </Container>

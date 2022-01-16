@@ -12,7 +12,6 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    'gatsby-plugin-favicons',
     {
       resolve: "gatsby-source-sanity",
       options: {
@@ -21,23 +20,6 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd,
       },
-    },
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: './src/favicon.png',
-        appName: 'My Website',
-        background: '#fff',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false
-        }
-      }
     },
   ],
 };

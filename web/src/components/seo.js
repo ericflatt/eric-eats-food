@@ -16,7 +16,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
     : "";
 
   return (
-    <Helmet
+    <Helmet 
       htmlAttributes={{ lang }}
       title={title}
       titleTemplate={title === siteTitle ? "%s" : `%s | ${siteTitle}`}

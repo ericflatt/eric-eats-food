@@ -24,7 +24,7 @@
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;
-  background: var(--color-very-light-gray);
+  /* background: var(--color-very-light-gray); */
 
   @nest & img {
     position: absolute;
@@ -33,11 +33,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
   }
 }
 
 .text {
-  /* empty */
+  padding: 8px;
 }
 
 .title {
@@ -57,6 +58,7 @@
 .excerpt {
   @nest & p {
     margin: 0.5em 0;
+    /* color: white; */
   }
 
   @nest & strong {

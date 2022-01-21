@@ -41,8 +41,8 @@ function BlogPost(props) {
             {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
-                  ? formatDistance(new Date(publishedAt), new Date())
-                  : format(new Date(publishedAt), "MMMM Mo, yyyy")}
+                  ? formatDistance(new Date(publishedAt), new Date()) 
+                  : format(new Date(publishedAt), "MMMM dd, yyyy")}
               </div>
             )}
             {/* {authors && <AuthorList items={authors} title="Authors" />} */}

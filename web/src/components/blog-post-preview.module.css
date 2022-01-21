@@ -20,6 +20,10 @@
 .inGrid {
   composes: root;
 }
+/* 
+.leadMediaThumb:first-child{
+  padding-bottom: 33%;
+} */
 
 .leadMediaThumb {
   position: relative;
